@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+	"name": "Anime Opening Skipper",
+	"version": "0.1",
+	"page_action": {
+		"default_icon": "icon.png"
+	},
+	"background": {
+		"scripts":["background.js"],
+		"persistent": false
+	},
+	"commands": {
+		"skip_op": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+S",
+				"mac":"MacCtrl+Shift+S"
+			},
+			"description": "Skip the intro of the anime",
+			"global": true
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://aniwatch.me/anime/*/*"
+			],
+			"js":["content.js"]
+		}
+	]
+}

@@ -12,8 +12,8 @@
 	"commands": {
 		"skip_op": {
 			"suggested_key": {
-				"default": "Ctrl+Shift+S",
-				"mac":"MacCtrl+Shift+S"
+				"default": "Ctrl+Shift+5",
+				"mac":"MacCtrl+Shift+5"
 			},
 			"description": "Skip the intro of the anime",
 			"global": true
